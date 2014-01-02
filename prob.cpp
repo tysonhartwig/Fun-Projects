@@ -6,7 +6,7 @@ using namespace std;
 
 int main() 
 {   
-    double n;
+    double n = 365.0;
     double r = 30.0;
     double prob = 1.0;
     double den = 1.0;
@@ -17,7 +17,7 @@ int main()
          den = 1.0;
          num = 1.0;  
          
-         for (n = 365; n > (365 - r); n--)  {     
+         for (n; n > (365 - r); n--)  {     
             num = num*n;
             den = den*365;
             // cout << num << den << "In for loop\n";                 
